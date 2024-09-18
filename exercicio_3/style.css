@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace; 
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 20px;
+    text-align: center;
+    word-spacing: 5px;
+    color: #00225c;
+}
+
+.slider {
+    position: relative;
+    max-width: 80%;
+    margin: 20px;
+    overflow: hidden; 
+    width: 700px;
+    border-radius: 15px;
+}
+
+.list {
+    display: flex;
+    transition: transform 1s ease;
+    width: 100%; 
+}
+
+.item {
+    min-width: 100%; 
+    box-sizing: border-box;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.anterior, .proximo {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.6s ease;
+    border-radius: 60%;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    transform: translateY(-50%);
+    margin: 0 10px; 
+}
+
+.proximo {
+    right: 10px;
+}
+
+.anterior {
+    left: 10px;
+}
+
+.anterior:hover, .proximo:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.ponto {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+}
+
+.active, .ponto:hover {
+    background-color: hsl(0, 0%, 44%);
+}
+
+#ponto {
+    text-align: center;
+}
+
+/* Responsivo */
+@media only screen and (max-width: 600px) {
+    .anterior, .proximo {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .text {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+}

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(250, 249, 246);
+}
+
+.tudo{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 9px 13px 0px rgba(0,0,0,0.25);
+}
+
+h1{
+    font-family: "Playwrite CU", cursive;
+    font-size: 30px;
+}
+
+#grafico{
+    width: 70vw;
+    padding: 10px;
+    margin: 25px;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: row;
+    border: 4px dashed black;
+    border-radius: 15px;
+}
+
+input, button{
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+button{
+    background-color: rgba(244, 187, 167);
+    cursor: pointer;
+    transition: background-color .4s ease, transform .4s ease;
+}
+
+button:hover{
+    background-color: rgb(237, 161, 134);;
+    transition: background-color .4s ease, transform .4s ease;
+    transform: scale(1.1);
+}

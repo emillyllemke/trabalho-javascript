@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 24px; 
+    text-align: center;
+    margin-top: 20px;
+}
+
+.colunas {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px; 
+    text-align: center;
+}
+
+.tarefas {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #a3c4fc;
+    padding: 10px;
+    margin: 5px; 
+    border-radius: 5px;
+    min-width: 200px; 
+    flex: 1; 
+    max-width: 300px; 
+    text-align: center;
+    border: 3px dashed black;
+    box-shadow: 5px 9px 13px 0px rgba(0,0,0,0.25);
+}
+
+.item {
+    background-color: azure;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item:hover {
+    background-color: #013183;
+    color: #D9D9D9;
+    font-weight: bold;
+}
+
+.dragging {
+    opacity: 0.5;
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+        font-size: 28px;
+        margin-top: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .tarefas {
+        margin: 15px; 
+    }
+
+    .container {
+        min-width: 250px; 
+    }
+}
+
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .tarefas {
+        margin: 20px;
+    }
+
+    .container {
+        min-width: 250px;
+    }
+}
